@@ -1,7 +1,7 @@
 'use strict';
 
 function checkForSpam(message) {
-  if (message.includes('span') || message.includes('sale')) {
+  if (message.includes('spam') || message.includes('sale')) {
     return true;
   } else {
     return false;
