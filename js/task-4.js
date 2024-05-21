@@ -1,24 +1,33 @@
 'use strict';
 
+let price;
+let str;
 function getShippingCost(country) {
-  let price;
-  let str;
+  if (country === 'China') {
+    price = 100;
+  }
+  if (country === 'Chile') {
+    price = 250;
+  }
+  if (country === 'Australia') {
+    price = 170;
+  }
+  if (country === 'Jamaica') {
+    price = 120;
+  }
   switch (country) {
     case 'China':
-      price = 100;
       str = `Shipping to ${country} will cost ${price} credits`;
       break;
     case 'Chile':
-      price === 250;
       str = `Shipping to ${country} will cost ${price} credits`;
       break;
     case 'Australia':
-      price === 170;
       str = `Shipping to ${country} will cost ${price} credits`;
       break;
     case 'Jamaica':
-      price === 120;
       str = `Shipping to ${country} will cost ${price} credits`;
+      break;
     default:
       str = 'Sorry, there is no delivery to your country';
   }
